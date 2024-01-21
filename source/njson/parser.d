@@ -165,7 +165,7 @@ void njParseArray(ref NJParseContext ctx, ref JValue value) {
 void njParseValue(ref NJParseContext ctx, ref JValue value) {
     switch(ctx.determineType()) {
         case JType.array_:
-            njParseObject(ctx, value);
+            njParseArray(ctx, value);
             break;
         case JType.object_:
             njParseObject(ctx, value);
