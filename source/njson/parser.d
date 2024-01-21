@@ -136,7 +136,7 @@ void njParseArray(ref NJParseContext ctx, ref JValue value) {
     ctx.skipWhitespace();
 
     // Ensure we have an object-open
-    njEnforce(ctx.str[ctx.idx++] == '[', ctx.line, ctx.c, "Expected '{'.");
+    njEnforce(ctx.str[ctx.idx++] == '[', ctx.line, ctx.c, "Expected '['.");
 
     // Iterate on object open
     do {
